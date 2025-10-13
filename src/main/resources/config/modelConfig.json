@@ -1,0 +1,17 @@
+{
+  "selectedModel": "mistral",
+  "models": {
+    "mistral": {
+      "enabled": true,
+      "temperature": 0.2
+    },
+    "deepseek-coder": {
+      "enabled": true,
+      "temperature": 0.3
+    },
+    "gpt-4": {
+      "enabled": true,
+      "temperature": 0.2
+    }
+  }
+}

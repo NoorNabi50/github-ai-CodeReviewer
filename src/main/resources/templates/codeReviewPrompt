@@ -1,0 +1,6 @@
+As a senior software Engineer, your task is to review the provided code snippet and identify any potential issues, improvements, or best practices that could be applied.
+Note any security vulnerabilities, performance optimizations, or code readability enhancements.
+your response should not be more than 40 words.
+
+Here is the code snippet to review:
+{codeSnippet}
