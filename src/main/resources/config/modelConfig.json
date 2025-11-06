@@ -1,5 +1,5 @@
 {
-  "selectedModel": "mistral",
+  "selectedModel": "gpt-4",
   "models": {
     "mistral": {
       "enabled": true,

@@ -22,7 +22,7 @@ public class OllamaMistralService implements ICodeReview {
 
     @Override
     public String reviewCode(ModelConfiguration modelConfiguration, GithubWebHookPayload payload) {
-
+        String responseText = "";
         try {
             String codeDiff = """
                     def greet(name) print("Hi " + name)
@@ -38,12 +38,12 @@ public class OllamaMistralService implements ICodeReview {
                     .build());
 
             ChatResponse response = ollamaChatModel.call(prompt);
-            String responseText = response.getResult().getOutput().getText();
+            responseText = response.getResult().getOutput().getText();
             System.out.println("AI Code Review Response: " + responseText);
         } catch (Exception ex) {
             throw new RuntimeException("Error during code review: " + ex.getMessage());
         }
-        return "Code review completed.";
+        return responseText;
     }
 
     @Override
